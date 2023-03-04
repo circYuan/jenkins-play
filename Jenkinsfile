@@ -7,9 +7,15 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('print') {
       steps {
         echo 'down!'
+      }
+    }
+
+    stage('') {
+      steps {
+        sh 'python3 t1.py'
       }
     }
 
